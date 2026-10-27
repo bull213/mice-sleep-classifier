@@ -1,0 +1,10 @@
+@echo off
+setlocal
+cd /d "%~dp0"
+if not exist ".venv\Scripts\python.exe" (
+    echo Run Setup.cmd first to create the Python environment.
+    pause
+    exit /b 1
+)
+".venv\Scripts\python.exe" launch.py
+if errorlevel 1 pause

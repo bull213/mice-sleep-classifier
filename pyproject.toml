@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flir-mouse-sleep-analyzer"
+version = "1.0.0"
+description = "Offline single-mouse FLIR video sleep estimation based on KumarLabJax MouseTracking and MouseSleep"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "licenses/*.txt"]
+requires-python = ">=3.12,<3.14"
+dynamic = ["dependencies"]
+
+[project.scripts]
+mouse-sleep = "mouse_sleep.cli:main"
+mouse-sleep-gui = "mouse_sleep.gui:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["mouse_sleep*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["requires_models: requires external segmentation checkpoint files (see docs/INSTALLATION.md)"]

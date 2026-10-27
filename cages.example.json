@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "calibration": {
+    "slope": 0.9674,
+    "intercept_c": 2.2661
+  },
+  "max_thermal_gap_seconds": 2.5,
+  "cages": [
+    {
+      "mouse_id": "cage_A",
+      "thermal_roi": [0, 0, 160, 240],
+      "analysis_dirs": ["outputs/cage_A/take01", "outputs/cage_A/take02"],
+      "exclude_intervals": []
+    },
+    {
+      "mouse_id": "cage_B",
+      "thermal_roi": [160, 0, 160, 240],
+      "analysis_dirs": ["outputs/cage_B/take01", "outputs/cage_B/take02"],
+      "exclude_intervals": []
+    }
+  ]
+}

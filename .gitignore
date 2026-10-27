@@ -1,0 +1,57 @@
+# Python environments, build products, and tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+
+# Downloaded data, models, and generated analyses
+/data/
+/pretrained_models/
+/classifier/
+/outputs/
+/verification/
+.cache/
+*.sqlite3*
+*.part
+*.part.chunks/
+*.log
+
+# Recordings and model binaries, including files outside the usual folders
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.mjpeg
+*.raw
+*.tiff
+*.tif
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.ckpt*
+*.tar
+*.zip
+
+# Personal settings and credentials; public examples and presets remain tracked
+/last_settings.json
+/settings.json
+/cages.json
+/cage_*_boundary.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+Thumbs.db
+.DS_Store

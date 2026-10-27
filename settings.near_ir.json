@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "video": "",
+  "output": "",
+  "appearance": "dark",
+  "masking_mode": "legacy",
+  "model": "AllCoatColor_RegularOFA",
+  "refinement": "off",
+  "threshold": 30,
+  "roi": null,
+  "batch_size": 4,
+  "minimum_coverage": 0.95,
+  "maximum_gap_seconds": 0.12,
+  "minimum_confidence": 0.6,
+  "timing_csv": "",
+  "take_id": null,
+  "classifier": "",
+  "max_seconds": 300
+}
